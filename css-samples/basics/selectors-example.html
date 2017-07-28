@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            font-size: 15px;
+            color: black;
+        }
+        
+        h2 {
+            font-size: 2em;
+            color: green;
+        }
+        
+        .content {
+            text-align: center;
+        }
+        
+        #idselector {
+            text-decoration: underline;
+            font-size: 1em;
+        }
+        
+        [target] {
+            color: hotpink;
+            font-size: 1.5em;
+        }
+        
+        [target="_blank"] {
+            color: yellow;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+        
+        [target~="porcupines"] {
+            color: purple;
+            font-size: 2em;
+            font-style: oblique;
+        }
+        
+        [class|="frappe"] {
+            color: brown;
+            font-size: 1.5em;
+        }
+        
+        [class^="mocha"] {
+            color: grey;
+            font-size: 1em;
+        }
+        
+        [class$="chai"] {
+            color: tomato;
+            font-size: 2em;
+        }
+        
+        [class*="chaitea"] {
+            color: darkolivegreen;
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+<div class="content">
+    <h1> Universal selector will make this font size 15px and black</h1>
+    <h2> Element selector will make this green and 2em font size </h2>
+    <p id="idselector">Id selector will make this underlined and bigger</p>
+    <a target="" href="">Attribute selector for target will make this hotpink and 1.5em</a>
+    <hr/>
+    <a target="_blank">Attribute selector [target="_blank"] will make this yellow and italic</a>
+    <hr/>
+    <a target="squishy fuzzy porcupines">Attribute selector  [target~="porcupines"] will make this purple and oblique by matching the word "porcupines" in the attribute.</a>
+    <hr/>
+    <a target="do you even porcupines">Attribute selector  [target~="porcupines"] will make this purple and oblique by matching the word "porcupines" in the attribute.</a>
+    <hr/>
+    <p class="frappe-larva">This will become brown and 1.5em by [class|="frappe"] matching first word of its attribute(classname). (Class doesn't exist.) </p>
+    <!-- NOTE:this matches beginning of the word, considering NO DELIMITER OR SPACES, UNLIKE ABOVE. -->
+    <p class="mochamosquitolarva">This will become grey and 1em,[class^="frappe"] NOTE:this matches beginning of the attribute, considering NO DELIMITER OR SPACES, UNLIKE ABOVE. </p>
+    <p class="thethingchai">This will become tomato colored and 2em, [class$="chai"] NOTE:this matches at the end of the attribute, considering no delimiter or spaces</p>
+    <p class="lattechaiteaPistol">This will become olive green and 2.5em courtesy,selector [class*="chaitea"] NOTE:this matches in the whole attribute, no delimiter,or end/beginning of attribute</p>
+</div>
+
+<body>
+</body>
+
+</html>

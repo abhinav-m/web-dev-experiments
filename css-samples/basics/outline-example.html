@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #content {
+            display: flex;
+            justify-content: center;
+            margin-top: 10vh;
+        }
+        
+        .normalBox {
+            width: 20vh;
+            height: 20vh;
+            background-color: blue;
+            border: 10px solid black;
+            outline: 20px solid green;
+            line-height: 20vh;
+            text-align: center;
+            padding: 2vh;
+        }
+        
+        .borderBox {
+            left: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5vh;
+            width: 20vh;
+            height: 20vh;
+            background-color: blue;
+            border: 10px solid black;
+            outline: 20px solid green;
+            line-height: 20vh;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div class="normalBox">content-box</div>
+    </div>
+    <div class="borderBox">border-box</div>
+</body>
+
+</html>
