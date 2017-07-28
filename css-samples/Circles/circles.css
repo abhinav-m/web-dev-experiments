@@ -1,0 +1,43 @@
+.circle {
+	position:relative;
+	height:15vw;
+	width:15vw;
+	background-color:green;
+	border-radius:50%;
+}
+
+
+#content {
+	position:relative;
+	display:inline-block;
+	left:35vw;
+	width:30vw;
+	top:10vh;
+
+
+}
+
+#circle1 {
+	position:absolute;
+	left:0;
+	box-shadow: 15vw 15vw 15vw 15vw #0ff;
+}
+
+#circle2 {
+	top:0%;
+	left:15vw;
+}
+
+
+#circle3 {
+	position:absolute;
+	left:0;
+}
+
+#circle4 {
+	bottom:0;
+	left:15vw;
+}
+
+
+

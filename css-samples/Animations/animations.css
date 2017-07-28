@@ -1,0 +1,45 @@
+tr {
+	width:300px;	
+}
+
+
+ 
+
+td {
+	width:100px;
+	height:100px;
+	text-align:center;
+	line-height:50px;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+.upperRow {
+	
+	animation: borderAnimateRowUpper 5s linear 1s 1;
+
+}
+
+.bottomRow {
+	
+	animation: borderAnimateRowBottom 5s linear 1s 1;
+	
+	
+}
+
+.midSquare {
+	border-style:solid;
+	border-color:black;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-bottom-width:0;
+	border-top-width:0;
+}
+
+.content {
+	display:flex;
+	justify-content:center;
+	margin:5%;
+}
