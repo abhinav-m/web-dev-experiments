@@ -1,18 +1,14 @@
-window.onload = initAll;
+window.onload = makeCall;
 
-function initAll() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(makeCall)
-    } else
-        alert("your browser doesn't support this!");
-}
 
-function makeCall(position) {
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
+function makeCall() {
     var script = document.createElement("script");
     script.src = 'https://api.github.com/gists?callback=myCallBack';
     document.body.appendChild(script);
+    $.getJSON('https://api.github.com/gists?callback=?', function(json) {
+        $("#content").html(json);
+
+    });
 }
 
 function myCallBack(response) {
