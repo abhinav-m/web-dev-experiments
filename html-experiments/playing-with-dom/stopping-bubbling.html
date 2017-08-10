@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body onclick="alert(`Bubbling doesn't reach here`)">
+    <!-- Remove bottom onclick to test 
+    /* A bubbling event goes from the target element straight up. 
+
+    Normally it goes upwards till <html>, and then to document object, and some events even reach window, calling all handlers on the path.
+    But any handler may decide that the event has been fully processed and stop the bubbling.
+
+    The method for it is event.stopPropagation().
+
+    For instance, here body.onclick doesn’t work if you click on <button>:
+    If an element has multiple event handlers on a single event, then even if one of them stops the bubbling, the other ones still execute.
+
+    In other words, event.stopPropagation() stops the move upwards, but on the current element all other handlers will run.
+
+    To stop the bubbling and prevent handlers on the current element from running, there’s a method event.stopImmediatePropagation(). After it no other handlers execute.   
+    
+    Don’t stop bubbling without a need!
+    Bubbling is convenient. Don’t stop it without a real need: obvious and architecturally well-thought.
+
+    Sometimes event.stopPropagation() creates hidden pitfalls that later may become problems.
+
+    For instance:
+
+    We create a nested menu. Each submenu handles clicks on its elements and calls stopPropagation so that outer menu don’t trigger.
+    Later we decide to catch clicks on the whole window, to track users’ behavior (where people click). 
+    Some analytic systems do that. Usually the code uses document.addEventListener('click'…) to catch all clicks.
+    Our analytic won’t work over the area where clicks are stopped by stopPropagation. We’ve got a “dead zone”.
+    There’s usually no real need to prevent the bubbling. A task that seemingly requires that may be solved by other means.
+     One of them is to use custom events, we’ll cover them later. 
+     Also we can write our data into the event object in one handler and read it in another one, so we can pass to handlers on parents information about the processing below.*/-->
+    <button onclick=" event.stopPropagation() "> Click Me </button>
+</body>
+
+</html>
