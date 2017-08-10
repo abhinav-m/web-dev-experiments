@@ -1,0 +1,29 @@
+<!-- Capturing
+
+There’s another phase of event processing called “capturing”. It is rarely used in real code, but sometimes can be useful.
+
+The standard DOM Events describes 3 phases of event propagation:
+
+Capturing phase – the event goes down to the element.
+Target phase – the event reached the target element.
+Bubbling phase – the event bubbles up from the element.
+Here’s the picture of a click on <td> inside a table, taken from the specification:
+
+
+That is: for a click on <td> the event first goes through the ancestors chain down to the element (capturing), then it reaches the target, and then it goes up (bubbles), calling handlers on its way.
+
+Before we only talked about bubbling, because the capturing phase is rarely used. Normally it is invisible to us.
+
+Handlers added using on<event>-property or using HTML attributes or using addEventListener(event, handler) don’t know anything about capturing, they only run on the 2nd and 3rd phases.
+
+To catch an event on the capturing phase, we need to set the 3rd argument of addEventListener to true.
+
+There are two possible values for that optional last argument:
+
+If it’s false (default), then the handler is set on the bubbling phase.
+If it’s true, then the handler is set on the capturing phase.
+Note that while formally there are 3 phases, the 2nd phase (“target phase”: the event reached the element) is not handled separately: handlers on both capturing and bubbling phases trigger at that phase.
+
+If one puts a handler on the target element – it triggers last on the capturing state, and first on the bubbling stage.
+
+-->
