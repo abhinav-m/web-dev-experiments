@@ -24,13 +24,108 @@ body {
   background:black;
 }
 
-.lord-up,.lord-down,.lord-left,.lord-right {
+.lord-up-0,.lord-up-1,.lord-up-2,.lord-up-3,
+.lord-down-0,.lord-down-1,.lord-down-2,.lord-down-3,
+.lord-left-0,.lord-left-1,.lord-left-2,.lord-left-3,
+.lord-right-0,.lord-right-1,.lord-right-2,.lord-right-3 {
   background-image: url('./starlord.png');
   background-repeat:no-repeat;
 }
 
-.lord-down {
+.lord-down-0 {
   background-position: -5px -1px;
   height:45px;
   width:23px;
+}
+
+.lord-down-1 {
+  background-position: -36px -2px;
+  width: 23px;
+	height: 44px;
+}
+
+.lord-down-2 {
+  background-position: -69px -1px;
+  width: 23px;
+	height: 45px;
+}
+
+.lord-down-3 {
+  background-position: -102px -2px;
+  width: 23px;
+	height: 44px;
+}
+
+.lord-left-0 {
+  background-position: -9px -50px;
+  width: 18px;
+	height: 44px;
+}
+
+.lord-left-1 {
+  background-position: -39px -51px;
+  width: 20px;
+	height: 43px;
+}
+
+.lord-left-2 {
+  background-position: -73px -50px;
+  width: 18px;
+	height: 44px;
+}
+
+.lord-left-3 {
+  background-position: -103px -51px;
+  width: 21px;
+	height: 43px;
+}
+
+
+.lord-right-0 {
+  background-position: -5px -98px;
+  width: 18px;
+	height: 44px;
+}
+
+.lord-right-1 {
+  background-position: -37px -99px;
+  width: 20px;
+  	height: 43px;
+}
+
+.lord-right-2 {
+  background-position: -69px -98px;
+  width: 18px;
+	height: 44px;
+}
+
+.lord-right-3 {
+  background-position: -100px -99px;
+  width: 21px;
+	height: 43px;
+}
+
+
+.lord-up-0 {
+  background-position: -4px -145px;
+  width: 25px;
+  	height: 45px;
+}
+
+.lord-up-1 {
+  background-position: -38px -146px;
+  width: 24px;
+	height: 44px;
+}
+
+.lord-up-2 {
+  background-position: -68px -145px;
+  width: 25px;
+	height: 45px;
+}
+
+.lord-up-3 {
+  background-position: -99px -146px;
+  width: 24px;
+	height: 44px;
 }
