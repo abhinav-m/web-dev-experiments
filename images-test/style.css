@@ -1,0 +1,36 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  height:100vh;
+  width:100vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.wrapper {
+  height:180px;
+  width:184px;
+  outline-color:purple;
+  outline-style:groove;
+}
+
+.cell {
+  float:left;
+  height:45px;
+  width:23px;
+  background:black;
+}
+
+.lord-up,.lord-down,.lord-left,.lord-right {
+  background-image: url('./starlord.png');
+  background-repeat:no-repeat;
+}
+
+.lord-down {
+  background-position: -5px -1px;
+  height:45px;
+  width:23px;
+}
