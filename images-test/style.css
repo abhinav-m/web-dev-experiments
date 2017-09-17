@@ -1,131 +1,109 @@
 * {
-  box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 body {
-  height:100vh;
-  width:100vw;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapper {
-  height:180px;
-  width:184px;
-  outline-color:purple;
-  outline-style:groove;
+    height: 188px;
+    width: 200px;
+    outline-color: purple;
+    outline-style: groove;
 }
 
 .cell {
-  float:left;
-  height:45px;
-  width:23px;
-  background:black;
+    float: left;
+    height: 47px;
+    width: 25px;
+    background: black;
 }
 
-.lord-up-0,.lord-up-1,.lord-up-2,.lord-up-3,
-.lord-down-0,.lord-down-1,.lord-down-2,.lord-down-3,
-.lord-left-0,.lord-left-1,.lord-left-2,.lord-left-3,
-.lord-right-0,.lord-right-1,.lord-right-2,.lord-right-3 {
-  background-image: url('./starlord.png');
-  background-repeat:no-repeat;
+.lord-up-0,
+.lord-up-1,
+.lord-up-2,
+.lord-up-3,
+.lord-down-0,
+.lord-down-1,
+.lord-down-2,
+.lord-down-3,
+.lord-left-0,
+.lord-left-1,
+.lord-left-2,
+.lord-left-3,
+.lord-right-0,
+.lord-right-1,
+.lord-right-2,
+.lord-right-3 {
+    background-image: url('./starlord.png');
+    background-repeat: no-repeat;
 }
 
 .lord-down-0 {
-  background-position: -5px -1px;
-  height:45px;
-  width:23px;
+    background-position: -5px -1px;
 }
 
 .lord-down-1 {
-  background-position: -36px -2px;
-  width: 23px;
-	height: 44px;
+    background-position: -36px -2px;
 }
 
 .lord-down-2 {
-  background-position: -69px -1px;
-  width: 23px;
-	height: 45px;
+    background-position: -69px -1px;
 }
 
 .lord-down-3 {
-  background-position: -102px -2px;
-  width: 23px;
-	height: 44px;
+    background-position: -102px -2px;
 }
 
 .lord-left-0 {
-  background-position: -9px -50px;
-  width: 18px;
-	height: 44px;
+    background-position: -9px -50px;
 }
 
 .lord-left-1 {
-  background-position: -39px -51px;
-  width: 20px;
-	height: 43px;
+    background-position: -39px -51px;
 }
 
 .lord-left-2 {
-  background-position: -73px -50px;
-  width: 18px;
-	height: 44px;
+    background-position: -73px -50px;
 }
 
 .lord-left-3 {
-  background-position: -103px -51px;
-  width: 21px;
-	height: 43px;
+    background-position: -103px -51px;
 }
 
-
 .lord-right-0 {
-  background-position: -5px -98px;
-  width: 18px;
-	height: 44px;
+    background-position: -5px -98px;
 }
 
 .lord-right-1 {
-  background-position: -37px -99px;
-  width: 20px;
-  	height: 43px;
+    background-position: -37px -99px;
 }
 
 .lord-right-2 {
-  background-position: -69px -98px;
-  width: 18px;
-	height: 44px;
+    background-position: -69px -98px;
 }
 
 .lord-right-3 {
-  background-position: -100px -99px;
-  width: 21px;
-	height: 43px;
+    background-position: -100px -99px;
 }
 
-
 .lord-up-0 {
-  background-position: -4px -145px;
-  width: 25px;
-  	height: 45px;
+    background-position: -4px -145px;
 }
 
 .lord-up-1 {
-  background-position: -38px -146px;
-  width: 24px;
-	height: 44px;
+    background-position: -38px -146px;
 }
 
 .lord-up-2 {
-  background-position: -68px -145px;
-  width: 25px;
-	height: 45px;
+    background-position: -68px -145px;
 }
 
 .lord-up-3 {
-  background-position: -99px -146px;
-  width: 24px;
-	height: 44px;
+    background-position: -99px -146px;
 }

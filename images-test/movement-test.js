@@ -27,7 +27,7 @@ down = 40 */
 function makeBoard() {
     var board = $('.wrapper');
 
-    for (var i = 0; i < 32; i++) {
+    for (var i = 0; i < 32 * 4; i++) {
         board.append(`<div class="${ i==CUR_POS ? 'cell lord-down-0':'cell' }" id=${i}></div>`);
     }
 
@@ -131,7 +131,7 @@ function addClass(direction) {
                 document.getElementById((CUR_POS + 1)).className = className;
             } else {
                 resetMovIndex();
-                CUR_DIR = MOVES.DOWN;
+                CUR_DIR = MOVES.RIGHT;
                 document.getElementById((CUR_POS + 1)).className = `cell lord-right-${MOV_INDEX}`;
             }
             CUR_POS += 1;
