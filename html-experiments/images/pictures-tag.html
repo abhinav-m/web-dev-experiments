@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <!--The HTML <picture> element serves as a container for zero or more <source> elements and
+   one <img> element to provide versions of an image for different display device scenarios.
+   The browser will consider each of the child <source> elements and
+  select one corresponding to the best match found;
+   if no matches are found among the <source> elements,
+   the file specified by the <img> element's src attribute is selected. -->
+<picture>
+<source srcset='dog-small.jpg' media='(max-width:600px)'>
+<source srcset='dog-medium.jpg' media='(max-width:1000px)'>
+<source srcset='dog.jpeg'>
+<img src="dog-small.jpg" alt="dog">
+</picture>
+</body>
+</html>
