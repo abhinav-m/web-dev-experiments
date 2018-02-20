@@ -1,0 +1,53 @@
+.title,.imageBox,.description{
+text-align:center;
+margin:25px;
+}
+
+.image-box {
+width:100%;
+}
+
+
+
+.techStack1 {
+  text-align: right;
+}
+
+.techStack2 {
+  text-align: center;
+
+}
+.techStack3 {
+  text-align:left;
+}
+
+.socialIcons{
+  text-align: center;
+}
+
+.techStack1,.techStack2,.techStack3 {
+
+  width:33.3%;
+  display:inline;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+
+i {
+  font-size:5em;
+  margin:10px;
+}
+
+@media (max-width:1200px) {
+  .techStack1, .techStack2 ,.techStack3 {
+    width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
+    text-align:center;
+  }
+
+  @media (max-width:600px) {
+    .techStack1, .techStack2 ,.techStack3{
+      width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
+      text-align:center;
+    }
