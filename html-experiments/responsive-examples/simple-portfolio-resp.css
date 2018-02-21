@@ -1,3 +1,8 @@
+body{
+  background:beige;
+  font-family: 'Raleway', sans-serif;
+}
+
 .title,.imageBox,.description{
 text-align:center;
 margin:25px;
@@ -7,7 +12,30 @@ margin:25px;
 width:100%;
 }
 
+h1,h2,h3 {
+  text-align:center;
+}
 
+h1 {
+  color:blue;
+}
+
+h2 {
+  letter-spacing:2px;
+  color:cadetblue;
+}
+
+.description {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  letter-spacing:2px;
+  font-size:1.2em;
+}
+
+hr {
+  width:50%;
+  margin-top:25px;
+  margin-bot:25px;
+}
 
 .techStack1 {
   text-align: right;
@@ -30,7 +58,8 @@ width:100%;
   width:33.3%;
   display:inline;
   float:left;
-  margin:0;
+  margin-bottom:25px;
+  margin-top:25px;
   padding:0;
 }
 
