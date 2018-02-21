@@ -48,16 +48,20 @@ hr {
 .techStack3 {
   text-align:left;
 }
+.techStack4 {
+  text-align:left;
+}
 
 .socialIcons{
   text-align: center;
 }
 
-.techStack1,.techStack2,.techStack3 {
+.techStack1,.techStack2,.techStack3,.techStack4 {
 
-  width:33.3%;
+  width:25%;
   display:inline;
   float:left;
+  text-align: center;
   margin-bottom:25px;
   margin-top:25px;
   padding:0;
@@ -69,14 +73,8 @@ i {
   margin:10px;
 }
 
-@media (max-width:1200px) {
-  .techStack1, .techStack2 ,.techStack3 {
+@media (max-width:1300px) {
+  .techStack1, .techStack2 ,.techStack3,.techStack4 {
     width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
     text-align:center;
   }
-
-  @media (max-width:600px) {
-    .techStack1, .techStack2 ,.techStack3{
-      width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
-      text-align:center;
-    }
