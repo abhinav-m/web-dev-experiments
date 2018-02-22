@@ -1,0 +1,87 @@
+body {
+  background:ivory;
+  font-family: 'News Cycle', sans-serif;
+}
+
+h1,h2,h3 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  letter-spacing:2px;
+  text-align:center;
+}
+
+h1 {
+  color:blue;
+}
+
+h2 {
+  color:cadetblue;
+}
+
+.icons {
+  text-align: center;
+}
+
+.gridContainer {
+display:grid;
+grid-template-rows:15px 10% 20% 10% 20% 20% 20% 25px;
+grid-template-columns:10% 80% 10%;
+grid-row-gap:25px;
+justify-items:center;
+}
+
+.title {
+  grid-row:2 / 3;
+  grid-column: 2 / 3;
+  background:cornsilk;
+  border-radius:10px;
+  padding:10px;
+}
+
+.imageBox {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.description {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  background:antiquewhite;
+  border-radius:10px;
+  padding:10px;
+}
+
+.projects {
+  grid-row: 5 / 6;
+  grid-column: 2 / 3;
+  background:blanchedalmond;
+  border-radius:10px;
+  padding:10px;
+}
+
+.techStack {
+  grid-row: 6 / 7;
+  grid-column: 2 / 3;
+  border-radius:10px;
+  padding:10px;
+  background:bisque;
+}
+
+.socialIcons {
+  grid-row: 7 / 8;
+  grid-column: 2 / 3;
+  border-radius:10px;
+  padding:10px;
+  background:navajowhite;
+}
+
+p {
+  text-align:center;
+  letter-spacing:1px;
+  font-size:1.2em;
+}
+
+
+i {
+  margin:10px;
+  font-size:4.5em;
+}
