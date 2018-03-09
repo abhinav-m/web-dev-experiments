@@ -19,7 +19,7 @@ body {
 
 .cell {
     float: left;
-    height: 47px;
+    height: 64px;
     width: 25px;
     background: black;
 }
@@ -46,6 +46,8 @@ body {
 
 .lord-down-0 {
     background-position: -5px -1px;
+    height:64px;;
+    width:25px;
 }
 
 .lord-down-1 {
