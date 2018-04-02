@@ -18,9 +18,3 @@ console.log(mapped);
 var result = Object.assign({}, ...mapped);
 console.log(result);
 
-function test(a, b, ...c) {
-  console.log(c);
-  console.log(a + b + c);
-}
-
-test('1', '2', [3, 4, 5, 6], 7, 8, 9);
