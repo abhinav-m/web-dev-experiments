@@ -39,7 +39,7 @@
         -->
     <script>
         for (let elem of document.querySelectorAll('*')) {
-            elem.addEventListener("click", e => alert(`Capturing: ${elem.tagName}`), true);
+            elem.addEventListener("click", e => alert(`Capturing: ${elem.tagName}`), true); //Add on capturing phase.
             elem.addEventListener("click", e => alert(`Bubbling: ${elem.tagName}`));
             /* Please note that P shows up two times: at the end of capturing and at the start of bubbling.
                There’s a property event.eventPhase that tells us the number of the phase on which the event was caught. 
