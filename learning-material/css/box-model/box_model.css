@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.normalBox {
+  background: blue;
+  border: 20px solid greenyellow;
+  padding: 20px;
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.borderBox {
+  box-sizing: border-box;
+  background: pink;
+  border: 20px solid greenyellow;
+  padding: 20px;
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+  height: 400px;
+  width: 400px;
+}
