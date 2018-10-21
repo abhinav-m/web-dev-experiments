@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .class-selector-1 {
+            background: yellow;
+        }
+
+        #id-selector {
+            background: red;
+        }
+
+        .class-selector-2 {
+            background: purple
+        }
+
+
+        .class-selector-1 .class-selector-2 {
+            background: blue
+        }
+
+        .class-selector-1>.class-selector-2 {
+            background: pink;
+        }
+
+        .class-selector-1+.class-selector-2 {
+            background: palegreen;
+        }
+
+        .class-selector-1::after {
+            content: "Hello"
+        }
+
+        .class-selector-1::before {
+            content: "Hi"
+        }
+
+        .class-selector-1:hover {
+            cursor: pointer;
+        }
+
+        .class-selector-2:focus {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Two class selectors used beside each other (immediately aside) -->
+    <div class="class-selector-1">class-selector-1</div>
+    <div class="class-selector-2">class-selector-2</div>
+    <div class="class-selector-1">
+        <div class="class-selector-2">class-selector-2 inside class-selector-1</div>
+        <div class="class-selector-2">
+            class-selector-2
+            <!-- At depth level 2 so class selectors are used -->
+            <div class="class-selector-2">class-selector-2 inside class-selector-1</div>
+        </div>
+    </div>
+
+    <div id="id-selector"></div>
+
+
+
+</body>
+
+</html>
