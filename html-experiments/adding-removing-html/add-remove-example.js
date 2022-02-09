@@ -52,7 +52,7 @@ function newCard(name, image, phone, email, description) {
     var name = names[idx];
     var email = emails[idx];
     var phone = numbers[idx];
-    var image = "https://picsum.photos/200/300";
+    var image = `https://picsum.photos/200/300?q=${new Date().getTime()}`;
   
     var container = document.getElementById("container");
     var description =
