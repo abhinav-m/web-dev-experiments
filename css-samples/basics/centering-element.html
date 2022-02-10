@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            height:500px;
+            width:500px;
+            margin:20px;
+            background-color:white;
+            border:10px solid blue;
+            position:relative;
+        }
+        /* 
+        Easiest way display flex and align-items / justify content
+        
+        */
+        .container2 {
+            height:500px;
+            width:500px;
+            margin:20px;
+            background-color:white;
+            border:10px solid gold;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+
+        .container3 {
+            height:500px;
+            width:500px;
+            margin:20px;
+            background-color:white;
+            border:10px solid palegreen;
+            position:relative;
+        }
+
+        /* Container is relative, position absolute and top left 50% adjust elements margin according
+           own height
+           and width to truly center */
+        .center_1 {
+            height:100px;
+            width:100px;
+            background-color:red;
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin:-50px 0 0 -50px;
+        }
+
+        .center_2 {
+            height:100px;
+            width:100px;
+            background-color:blue;
+        }
+
+        .center_3 {
+            height:100px;
+            width:100px;
+            background-color:brown;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="center_1"></div>
+</div>
+<div class="container2">
+    <div class="center_2"></div>
+</div>
+
+<div class="container3">
+    <div class="center_3"></div>
+</div>
+</body>
+
+</html>
